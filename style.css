@@ -1,0 +1,329 @@
+/* font-family: 'Montserrat', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Montserrat', sans-serif; 
+}
+    
+
+/* Topbtn animation ==================================
+=========================================================== */
+.topbtn{
+    position: fixed;
+    bottom: 0;
+    right: 25px;
+    z-index: 1;
+    padding-bottom: 25px;
+    display: none;
+}
+.topbtn i{
+    color: #fff;
+    font-size: 13px;
+    background: #0ba9ec;
+    padding: 12px;
+    border-radius: 50%;
+    transition: .25s all ease-in-out;
+}
+
+
+/* Header part start=================================
+======================================================*/
+
+.header{
+    background-color: #040B14;
+    min-height: 100px;
+}
+.navbar-nav .nav-item .nav-link{
+    color: white;
+    margin-right: 30px;
+    margin-top: 20px;
+    position: relative;
+    display: inline-block;
+}
+.navbar-nav .nav-item .nav-link::before{
+    content: '';
+    width: 0%;
+    height: 2px;
+    left: 9px;
+    bottom: 5px;
+    background-color: white;
+    position: absolute;
+    transition: 0.3s all ease-in-out;
+}
+.navbar-nav .nav-item .nav-link:hover::before{
+    width: 70%;
+}
+.navbar-toggler span{
+    background-color: white;
+}
+
+/* Header part end================================= 
+======================================================*/
+
+
+/* Banner part start ===============================
+    ====================================================*/
+
+.main_section{
+    background-image: url(image/about.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 50px;
+    min-height: 85vh;
+    position: relative;
+}
+.main_section_content h1{
+    margin-top: 190px;
+    color: white;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+.main_section_content h2{
+    font-size: 25px;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+.over{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: black;
+    opacity: .3;
+}
+.banner_logo{
+    position: relative;
+    z-index: 1;
+    display: flex;
+}
+.icon_border{
+    width: 30px;
+    height: 30px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.icon_border:hover{
+    background-color: #35a5d4;
+}
+.banner_logo a{
+    color: white;
+    font-size: 17px;
+}
+
+/* Banner part end ===============================
+    ====================================================*/
+
+
+/* About part start ===============================
+    ==================================================== */
+
+.about_down_border{
+    width: 80px;
+    height: 1px;
+    background-color: rgb(155, 145, 145);
+    position: relative;
+}
+.about_content p{
+    font-size: 16px;
+}
+.down_border_position{
+    width: 30px;
+    height: 4px;
+    background-color: #35a5d4;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -1px;
+    border-radius: 5px;
+    animation: animate 2s infinite;
+    animation-direction: alternate;
+}
+@keyframes animate{
+    0%{
+        left: 83%;
+    }
+    100%{
+        left: 20%;
+    }
+  
+}
+.about_image{
+    width: 100%;
+    height: 100%;
+}
+.about_image img{
+    width: 100%;
+    height: 80%;
+    border-radius: 100%;
+}
+.about_content_right h3{
+    margin-top: 70px;
+    font-weight: 500;
+}
+.about_content_right p{
+    font-size: 16px;
+}
+.dateOf_about{
+    display: flex;
+    margin-bottom: 17px;
+}
+.dateOf_about i{
+    color: #35a5d4;
+    margin-right: 5px;
+}
+.dateOf_about a{
+    color: #35a5d4;
+    margin-right: 5px;
+}
+.dateOf_about span{
+   font-size: 15px;
+}
+/* About part end ===============================
+    ==================================================== */
+
+
+
+/* Fsct part start ===============================
+    ==================================================== */
+
+.clieant_content i{
+    font-size: 50px;
+    color: #35a5d4;
+    margin-bottom: 10px;
+}
+.clieant_content h4{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+/* Fact part end ===============================
+    ==================================================== */
+
+
+/* Skill part start ===============================
+    ==================================================== */
+.progress_1{
+    margin-bottom: 25px;
+}
+
+
+/* Skill part end ===============================
+    ==================================================== */
+
+
+
+/* protfolio part start ===============================
+    ==================================================== */
+.protfolio_tab .btn{
+    margin-right: 20px;
+    cursor: pointer;
+    background-color: #35a5d4;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #000;
+}
+.psda_img{
+    position: relative;
+    cursor: pointer;
+}
+.psda_img::before{
+    content: '';
+    position: absolute;
+    background-color: #252222;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.psda_img:hover::before{
+    width: 100%;
+    height: 100%;
+    opacity: .4;
+}
+.img_hover_icon i{
+    color: white;
+    font-size: 25px;
+}
+.img_hover_icon{
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: .7s all ease-in-out;
+}
+.psda_img:hover .img_hover_icon{
+    top: 50%;
+    opacity: 1;
+    z-index: 1;
+}
+
+
+/* protfolio part end ===============================
+    ==================================================== */
+
+
+
+/* Service part start ===============================
+    ==================================================== */
+
+.servicea_main_content{
+    margin-top: 15px;
+    background-color: #fff;
+    padding: 25px 20px;
+    box-shadow: rgb(114, 112, 112) 1px 1px 10px 1px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.servicea_main_content .service_img i{
+    font-size: 50px;
+    color: #35a5d4;
+    margin-bottom: 15px;
+}
+
+/* Service part end ===============================
+    ==================================================== */
+
+
+.contact_content{
+    margin-bottom: 30px;
+}
+.contact_content i{
+    color: #35a5d4;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.contact_content h6 a{
+    color: #000;
+}
+form input{
+    border: 1px solid #35a5d4 !important;
+}
+form input[type="text"]{
+    box-shadow: none !important;
+}
+form input[type="email"]{
+    box-shadow: none !important;
+}
+form input[type=submit]{
+    margin: 0;
+    padding: 0;
+    background-color: #35a5d4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
