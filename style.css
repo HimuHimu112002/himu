@@ -68,11 +68,10 @@ body{
     ====================================================*/
 
 .main_section{
-    background-image: url(image/about.jpeg);
+    background-image: url(image/about1.JPG);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 50px;
     min-height: 85vh;
     position: relative;
 }
